@@ -62,7 +62,7 @@ model.add(Dense(5))
 model.add(Dense(1))
 
 
-model.compile(loss = 'mse',optimizer ='adam')
+model.compile(loss = 'mse',optimizer ='sgd')
 history_object = model.fit(X_train, y_train, validation_split = 0.15, shuffle=True, nb_epoch=30)
 
 model.save('model.h5')
