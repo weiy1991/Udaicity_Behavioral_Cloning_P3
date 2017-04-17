@@ -111,5 +111,7 @@ This is my trained model. This model can make the car run the whole lap of at th
 
 [image1]: figure_final.png "The error visualization"
 
+![alt text][image1]
+
 
 
