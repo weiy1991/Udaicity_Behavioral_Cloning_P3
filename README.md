@@ -100,4 +100,21 @@ python video.py run1 --fps 48
 
 The video will run at 48 FPS. The default FPS is 60.
 
+#### clone.py
+This is the clone python file which is used to read the image and steer angle data to train model and save the model file with the format .h5.  I set the optimizer to 'sgd'  and epochs to 30. You can train your own model by modified the path to read the data in clone.py file.
+
+
 #### model.h5
+This is my trained model. This model can make the car run the whole lap of at the autonomous status. You can drive your car using this model or your own model. 
+
+[//]: # (Image References)
+
+[image1]: ./examples/placeholder.png "Model Visualization"
+[image2]: ./examples/placeholder.png "Grayscaling"
+[image3]: ./examples/placeholder_small.png "Recovery Image"
+[image4]: ./examples/placeholder_small.png "Recovery Image"
+[image5]: ./examples/placeholder_small.png "Recovery Image"
+[image6]: ./examples/placeholder_small.png "Normal Image"
+[image7]: ./examples/placeholder_small.png "Flipped Image"
+
+
