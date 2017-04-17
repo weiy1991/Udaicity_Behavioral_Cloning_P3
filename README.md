@@ -111,6 +111,9 @@ This is my trained model. This model can make the car run the whole lap of at th
 
 [image1]: figure_final.png "The error visualization"
 
+### The error visualization
+This  image is the error in the training and validation procedure.
+
 ![alt text][image1]
 
 
