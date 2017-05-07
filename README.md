@@ -48,17 +48,28 @@ The simulator can be downloaded from [simulator](https://github.com/udacity/self
 
 ## Model architecture
 Here, I use the Nvidia Model from the paper[End to End Learning for Self-Driving Cars](https://arxiv.org/abs/1604.07316) 
-[//]: # (Image References)
 
+[//]: # (Image References)
 [image1]: Navidiamodel.png "The architecture of Nvidia Model"
 
 ### he architecture of Nvidia Model
 This  image shows the architecture of Nvidia Model.
 
+The first layer is used to normalized the input array. The next layers are several convolutional layers to get the feature maps from
+the dataset. For example, the first convolutional layer can get 24 feature maps. Then, I flatten the last convolutional layer and add a dropout layer to avoid overfitting. And three fully-collected layers are given and one node will get the steer value in the last stage. By the way ,I the "Relu" unit as the activation in the end-to-end CNN architecture. 
+
 ![alt text][image1]
 
 ## Model Training
 
+Here, we use the dataset given by Udacity and some dataset recorded by myself to train the model.
+some images are as follows:
+
+[//]: # (Image References)
+[image2]: pic1.jpg "example of the training image"
+[image3]: pic2.jpg "example of the training image"
+[image4]: pic3.jpg "example of the training image"
+![alt text][image1]
 
 
 ## Details About Files In This Directory
