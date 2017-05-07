@@ -50,7 +50,7 @@ The simulator can be downloaded from [simulator](https://github.com/udacity/self
 Here, I use the Nvidia Model from the paper[End to End Learning for Self-Driving Cars](https://arxiv.org/abs/1604.07316) 
 
 [//]: # (Image References)
-[image1]: Navidiamodel.png "The architecture of Nvidia Model"
+[image1]: Nvidiamodel.png "The architecture of Nvidia Model"
 
 ### the architecture of Nvidia Model
 This  image shows the architecture of Nvidia Model.
@@ -91,6 +91,8 @@ The above command will load the trained model and use the model to make predicti
 [//]: # (Image References)
 [image3]: drive.png "example of driving the car by AI"
 ![alt text][image3]
+
+and you can also see the video I made before on the Youtube [Driving by AI](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model) 
 
 Note: There is known local system's setting issue with replacing "," with "." when using drive.py. When this happens it can make predicted steering values clipped to max/min values. If this occurs, a known fix for this is to add "export LANG=en_US.utf8" to the bashrc file.
 
