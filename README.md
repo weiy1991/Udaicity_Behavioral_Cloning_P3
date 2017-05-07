@@ -52,7 +52,7 @@ Here, I use the Nvidia Model from the paper[End to End Learning for Self-Driving
 [//]: # (Image References)
 [image1]: Navidiamodel.png "The architecture of Nvidia Model"
 
-### he architecture of Nvidia Model
+### the architecture of Nvidia Model
 This  image shows the architecture of Nvidia Model.
 
 The first layer is used to normalized the input array. The next layers are several convolutional layers to get the feature maps from
@@ -63,12 +63,12 @@ the dataset. For example, the first convolutional layer can get 24 feature maps.
 ## Model Training
 
 Here, we use the dataset given by Udacity and some dataset recorded by myself to train the model.
-some images are as follows:
-
+one example image is as follows:
 [//]: # (Image References)
 [image2]: pic1.jpg "example of the training image"
 ![alt text][image2]
 
+I split 15% traning dataset to be the validation dataset. meanwhile , I set the epochs to be 30 because I found the loss will be stable after several experiments. Then, contrast to other peopel, I choose SGD as the optimizer and use the default learning rate mostly because I found the optimizer was more stable from the loss visulization and I could drive the car for one lap of the track after I used the strategy. In a word, this stragety works good from my expriment.
 
 ## Details About Files In This Directory
 
@@ -143,7 +143,7 @@ This is my trained model. This model can make the car run the whole lap of at th
 [image3]: figure_final.png "The error visualization"
 
 ### The error visualization
-This  image shows the error in the training and validation procedure.
+This  image shows the error in the training and validation procedure. The loss will be stable in about 25 epochs later.
 
 ![alt text][image3]
 
