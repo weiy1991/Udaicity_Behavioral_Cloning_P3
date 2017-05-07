@@ -69,7 +69,7 @@ one example image is as follows:
 [image2]: pic1.jpg "example of the training image"
 ![alt text][image2]
 
-I split 15% traning dataset to be the validation dataset. meanwhile , I set the epochs to be 30 because I found the loss will be stable after several experiments. Then, contrast to other peopel, I choose SGD as the optimizer and use the default learning rate mostly because I found the optimizer was more stable from the loss visulization and I could drive the car for one lap of the track after I used the strategy. In a word, this stragety works good from my expriment.
+I split 15% traning dataset to be the validation dataset. meanwhile , I set the epochs to be 30 because I found the loss will be stable after several experiments. Then, contrast to other people, I choose SGD as the optimizer and use the default learning rate mostly because I found the optimizer was more stable from the loss visulization and I could drive the car for one lap of the track after I used the strategy. In a word, this stragety works good in my expriment.
 
 ## Details About Files In This Directory
 
