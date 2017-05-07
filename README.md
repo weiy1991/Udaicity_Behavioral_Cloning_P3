@@ -38,6 +38,28 @@ The following resources can be found in this github repository:
 
 The simulator can be downloaded from [simulator](https://github.com/udacity/self-driving-car-sim)
 
+## Data Preprocessing
+(1)Record the data from the simulator
+	In fact , I found the dataset  given by Udacity is good enough to train the model. However, it needs to record more data if we want to make our model more robust to finish one loop of the track. Here, I record another special scenarios' image to train the model. 
+(2)Read the raw data from the CSV file
+	We can read the data from the csv file, including the steering data and the path of the image we  need to use. This process can be seen from my code of clone.py
+(3)Flipped the raw image
+	This is a great strantegy. By this way , more dataset will be generated and the model can learn how to drive in another direction.
+
+## Model architecture
+Here, I use the Nvidia Model from the paper[End to End Learning for Self-Driving Cars](https://arxiv.org/abs/1604.07316) 
+[//]: # (Image References)
+
+[image1]: Navidiamodel.png "The architecture of Nvidia Model"
+
+### he architecture of Nvidia Model
+This  image shows the architecture of Nvidia Model.
+
+![alt text][image1]
+
+## Model Training
+
+
 
 ## Details About Files In This Directory
 
@@ -109,12 +131,12 @@ This is my trained model. This model can make the car run the whole lap of at th
 
 [//]: # (Image References)
 
-[image1]: figure_final.png "The error visualization"
+[image2]: figure_final.png "The error visualization"
 
 ### The error visualization
 This  image shows the error in the training and validation procedure.
 
-![alt text][image1]
+![alt text][image2]
 
 
 
