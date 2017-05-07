@@ -64,6 +64,7 @@ the dataset. For example, the first convolutional layer can get 24 feature maps.
 
 Here, we use the dataset given by Udacity and some dataset recorded by myself to train the model.
 one example image is as follows:
+
 [//]: # (Image References)
 [image2]: pic1.jpg "example of the training image"
 ![alt text][image2]
