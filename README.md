@@ -88,6 +88,10 @@ python drive.py model.h5
 
 The above command will load the trained model and use the model to make predictions on individual images in real-time and send the predicted angle back to the server via a websocket connection.
 
+[//]: # (Image References)
+[image3]: drive.png "example of driving the car by AI"
+![alt text][image3]
+
 Note: There is known local system's setting issue with replacing "," with "." when using drive.py. When this happens it can make predicted steering values clipped to max/min values. If this occurs, a known fix for this is to add "export LANG=en_US.utf8" to the bashrc file.
 
 #### Saving a video of the autonomous agent
@@ -141,12 +145,12 @@ This is my trained model. This model can make the car run the whole lap of at th
 
 [//]: # (Image References)
 
-[image3]: figure_final.png "The error visualization"
+[image4]: figure_final.png "The error visualization"
 
 ### The error visualization
 This  image shows the error in the training and validation procedure. The loss will be stable in about 25 epochs later.
 
-![alt text][image3]
+![alt text][image4]
 
 
 
