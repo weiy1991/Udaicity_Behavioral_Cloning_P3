@@ -92,7 +92,7 @@ The above command will load the trained model and use the model to make predicti
 [image3]: drive.png "example of driving the car by AI"
 ![alt text][image3]
 
-and you can also see the video I made before on the Youtube [Driving by AI](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model) 
+and you can also see the video I made before on the Youtube [YUAN_AIDriving](https://www.youtube.com/watch?v=JKGyAvju45A) 
 
 Note: There is known local system's setting issue with replacing "," with "." when using drive.py. When this happens it can make predicted steering values clipped to max/min values. If this occurs, a known fix for this is to add "export LANG=en_US.utf8" to the bashrc file.
 
