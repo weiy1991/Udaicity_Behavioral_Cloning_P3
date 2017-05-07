@@ -69,7 +69,7 @@ some images are as follows:
 [image2]: pic1.jpg "example of the training image"
 [image3]: pic2.jpg "example of the training image"
 [image4]: pic3.jpg "example of the training image"
-![alt text][image1]
+![alt text][image2,image3,image4]
 
 
 ## Details About Files In This Directory
@@ -142,12 +142,12 @@ This is my trained model. This model can make the car run the whole lap of at th
 
 [//]: # (Image References)
 
-[image2]: figure_final.png "The error visualization"
+[image5]: figure_final.png "The error visualization"
 
 ### The error visualization
 This  image shows the error in the training and validation procedure.
 
-![alt text][image2]
+![alt text][image5]
 
 
 
