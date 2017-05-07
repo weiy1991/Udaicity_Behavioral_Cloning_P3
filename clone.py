@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import csv
 import cv2
 import numpy as np
@@ -39,7 +41,7 @@ y_train = np.array(augmented_measurements)
 
 # model of nn
 from keras.models import Sequential
-from keras.layers import Flatten, Dense, Lambda, Cropping2D
+from keras.layers import Flatten, Dense, Lambda, Cropping2D, Dropout
 from keras.layers.convolutional import Convolution2D
 from keras.layers.pooling import MaxPooling2D
 
@@ -54,6 +56,7 @@ model.add(Convolution2D(64,3,3,activation="relu"))
 model.add(Convolution2D(64,3,3,activation="relu"))
 #model.add(MaxPooling2D())
 model.add(Flatten())
+model.add(Dropout(0.5))
 model.add(Dense(100))
 #model.add(Dense(84))
 model.add(Dense(50))
