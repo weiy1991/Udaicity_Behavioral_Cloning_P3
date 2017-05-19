@@ -97,6 +97,19 @@ I split 15% traning dataset to be the validation dataset. meanwhile , I set the 
 ###Attempts to slove some failed cases 
 (2) However, there were a few spots where the vehicle fell off the track when I test my model. To improve the driving behavior in these cases, I recorded more data in these cases. On one hand, this would teach the model to learn how to drive through the cases. On another hand, more data could avoid overfitting. After several test, the car could go through the failed cases before.
 
+## Details on model training and characteristics of the dataset
+
+(1)If I used the data only recorded from the center of the road, the car may go out of the road with my model. I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to go back to the center of the road. These images show what a recovery looks like starting from the road edge. After training the model with these image, the car can go well on the track.
+
+(2)To augment the data sat, I also flipped images and angles thinking that this would augment the dataset and teach the model with two direction. Which means the model can learn more scenarios from the augmentation of images.
+
+(3)After the collection process, I had 14000 images. I then preprocessed this data by flipped the images , then the dataset contains 28000 images.
+
+(4)I finally randomly shuffled the data set and put 15% of the data into a validation set. This will tell me the quality of model.
+
+(5)I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 30 as evidenced by the loss of validation.
+
+
 ## Details About Files In This Directory
 
 ### `drive.py`
