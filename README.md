@@ -53,10 +53,28 @@ Here, I use the Nvidia Model from the paper[End to End Learning for Self-Driving
 [image1]: Nvidiamodel.png "The architecture of Nvidia Model"
 
 ### the architecture of Nvidia Model
-This  image shows the architecture of Nvidia Model.
+This  image shows the architecture of Nvidia Model. But I add a dropout layer to the model to avoid overfitting.
 
-The first layer is used to normalized the input array. The next layers are several convolutional layers to get the feature maps from
-the dataset. For example, the first convolutional layer can get 24 feature maps. Then, I flatten the last convolutional layer and add a dropout layer to avoid overfitting. And three fully-collected layers are given and one node will get the steer value in the last stage. By the way ,I the "Relu" unit as the activation in the end-to-end CNN architecture. 
+The final model architecture (clone.py lines 44-57) consisted of 5 convolution neural networks with one Lambda layer, one Keras cropping layer, one flatten layer, one dropout layer, 5 dense layers
+
+The Lambda layer is used to normalize the image data and the cropping layer is used to crop the image.
+
+The first convolutional layer can get 24 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 46).
+
+The second convolutional layer can get 36 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 47).
+
+The third convolutional layer can get 48 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 48).
+
+The forth convolutional layer can get 64 feature maps with 3x3 filter sizes and a Relu unit(clone.py lines 49).
+
+The forth convolutional layer can get 64 feature maps with 3x3 filter sizes and a Relu unit(clone.py lines 50).
+
+Next layer is the Kera Flatten layer which is used to flatten the ConvNet.(clone.py lines 51).
+
+Then, the dropout layer is used to avoid overfitting, I set 50% nerual to be obtained.(clone.py lines 52).
+
+The last 5 layers are dense layer, the number of units are 100, 50, 10 ,5,  1.(clone.py lines 53-57).
+
 
 ![alt text][image1]
 
@@ -73,8 +91,10 @@ I split 15% traning dataset to be the validation dataset. meanwhile , I set the 
 
 ## Problem I met and the way to solve the problem
 
+###Attempts to reduce overfitting in the model
 (1)When I first trained my model, I found that the validation loss was high over the time. This implied that the model was overfitting. To combat the overfitting, I modified the model to add a dropout layer so that my model can avoid overfitting, the result was good.
 
+###Attempts to slove some failed cases 
 (2) However, there were a few spots where the vehicle fell off the track when I test my model. To improve the driving behavior in these cases, I recorded more data in these cases. On one hand, this would teach the model to learn how to drive through the cases. On another hand, more data could avoid overfitting. After several test, the car could go through the failed cases before.
 
 ## Details About Files In This Directory
