@@ -8,7 +8,7 @@ This repository contains starting files for the Behavioral Cloning Project in Ud
 
 In this project, I used deep neural networks and convolutional neural networks to clone driving behavior. I have trained, validated and tested a model using Keras. The model will output a steering angle to an autonomous vehicle.
 
-I used the simulator that Udacity provided where I can steer a car around a track for data collection. I used image data and steering angles to train a neural network and then use this model to drive the car autonomously around the track by the simulator.
+I used the simulator that Udacity provided where I can steer a car around a track for data collection. I used image data and steering angles to train a neural network and then use this model to drive the car autono mously around the track by the simulator.
 
 The Project
 ---
@@ -70,6 +70,12 @@ one example image is as follows:
 ![alt text][image2]
 
 I split 15% traning dataset to be the validation dataset. meanwhile , I set the epochs to be 30 because I found the loss will be stable after several experiments. Then, contrast to other people, I choose SGD as the optimizer and use the default learning rate mostly because I found the optimizer was more stable from the loss visulization and I could drive the car for one lap of the track after I used the strategy. In a word, this stragety works good in my expriment.
+
+## Problem I met and the way to solve the problem
+
+(1)When I first trained my model, I found that the validation loss was high over the time. This implied that the model was overfitting. To combat the overfitting, I modified the model to add a dropout layer so that my model can avoid overfitting, the result was good.
+
+(2) However, there were a few spots where the vehicle fell off the track when I test my model. To improve the driving behavior in these cases, I recorded more data in these cases. On one hand, this would teach the model to learn how to drive through the cases. On another hand, more data could avoid overfitting. After several test, the car could go through the failed cases before.
 
 ## Details About Files In This Directory
 
