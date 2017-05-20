@@ -62,7 +62,9 @@ Then, I flipped the raw image to augement the dataset, the flipped images are as
 
 [//]: # (Image References)
 [image7]: raw1_flipped.jpg "example of the flipped image"
-![alt text][image7]
+[image8]: raw2_flipped.jpg "example of the flipped image"
+[image9]: raw3_flipped.jpg "example of the flipped image"
+![alt text][image7] ![alt text][image8] ![alt text][image9]
 
 
 
