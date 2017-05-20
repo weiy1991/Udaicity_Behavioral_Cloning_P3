@@ -109,7 +109,7 @@ one example image is as follows:
 [image2]: pic1.jpg "example of the training image"
 ![alt text][image2]
 
-I split 15% traning dataset to be the validation dataset. meanwhile , I set the epochs to be 30 because I found the loss will be stable after several experiments. Then, contrast to other people, I choose SGD as the optimizer and use the default learning rate mostly because I found the optimizer was more stable from the loss visulization and I could drive the car for one lap of the track after I used the strategy. In a word, this stragety works good in my expriment.
+I split 15% traning dataset to be the validation dataset. meanwhile , I set the epochs to be 30 because I found the loss will be stable after several experiments. Then, I modified the optimizer after got the advice from the mentor, I then use the Adam as the optimizer. I found the optimizer was good from the loss visulization and I could drive the car for one lap of the track after I used the strategy and modified some bug. In a word, this stragety works good in my expriment.
 
 ## Problem I met and the way to solve the problem
 
@@ -153,7 +153,7 @@ The above command will load the trained model and use the model to make predicti
 [image3]: drive.png "example of driving the car by AI"
 ![alt text][image3]
 
-and you can also see the video I made before on the Youtube [YUAN_AIDriving](https://www.youtube.com/watch?v=JKGyAvju45A) 
+and you can also see the video I made before on the Youtube [YUAN_AIDriving](https://www.youtube.com/watch?v=ewKzXdj2MTU) 
 
 Note: There is known local system's setting issue with replacing "," with "." when using drive.py. When this happens it can make predicted steering values clipped to max/min values. If this occurs, a known fix for this is to add "export LANG=en_US.utf8" to the bashrc file.
 
