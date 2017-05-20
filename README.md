@@ -77,25 +77,25 @@ Here, I use the Nvidia Model from the paper[End to End Learning for Self-Driving
 ### the architecture of Nvidia Model
 This  image shows the architecture of Nvidia Model. But I add a dropout layer to the model to avoid overfitting.
 
-The final model architecture (clone.py lines 44-57) consisted of 5 convolution neural networks with one Lambda layer, one Keras cropping layer, one flatten layer, one dropout layer, 5 dense layers
+The final model architecture (clone.py lines 85-98) consisted of 5 convolution neural networks with one Lambda layer, one Keras cropping layer, one flatten layer, one dropout layer, 5 dense layers
 
 The Lambda layer is used to normalize the image data and the cropping layer is used to crop the image.
 
-The first convolutional layer can get 24 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 46).
+The first convolutional layer can get 24 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 87).
 
-The second convolutional layer can get 36 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 47).
+The second convolutional layer can get 36 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 88).
 
-The third convolutional layer can get 48 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 48).
+The third convolutional layer can get 48 feature maps with 5x5 filter sizes and a Relu unit(clone.py lines 89).
 
-The forth convolutional layer can get 64 feature maps with 3x3 filter sizes and a Relu unit(clone.py lines 49).
+The forth convolutional layer can get 64 feature maps with 3x3 filter sizes and a Relu unit(clone.py lines 90).
 
-The forth convolutional layer can get 64 feature maps with 3x3 filter sizes and a Relu unit(clone.py lines 50).
+The forth convolutional layer can get 64 feature maps with 3x3 filter sizes and a Relu unit(clone.py lines 91).
 
-Next layer is the Kera Flatten layer which is used to flatten the ConvNet.(clone.py lines 51).
+Next layer is the Kera Flatten layer which is used to flatten the ConvNet.(clone.py lines 92).
 
-Then, the dropout layer is used to avoid overfitting, I set 50% nerual to be obtained.(clone.py lines 52).
+Then, the dropout layer is used to avoid overfitting, I set 50% nerual to be obtained.(clone.py lines 93).
 
-The last 5 layers are dense layer, the number of units are 100, 50, 10 ,5,  1.(clone.py lines 53-57).
+The last 5 layers are dense layer, the number of units are 100, 50, 10 ,5,  1.(clone.py lines 94-98).
 
 
 ![alt text][image1]
