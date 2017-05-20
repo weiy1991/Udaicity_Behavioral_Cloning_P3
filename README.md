@@ -54,7 +54,7 @@ The simulator can be downloaded from [simulator](https://github.com/udacity/self
 [image4]: raw1.jpg  "example of the raw image"
 [image5]: raw2.jpg  "example of the raw image"
 [image6]: raw3.jpg  "example of the raw image"
-![alt text][image4 image5 image6]
+![alt text][image4] ![alt text][image5] ![alt text][image6]
 
 
 Then, I flipped the raw image to augement the dataset, the flipped images are as follows:
