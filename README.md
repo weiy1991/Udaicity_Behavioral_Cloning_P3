@@ -40,10 +40,13 @@ The simulator can be downloaded from [simulator](https://github.com/udacity/self
 
 ## Data collection maneuver and preprocessing
 (1)In fact, the data collection maneuver is very important. First, I collect several loops that car drive on the center of the road, this will tell If I only collect image from the mid-line, the car won't know how to drive when it face the edge of the road. So, I need to collect data that car drive forward the edge of the road and then come back to the center of the road.
+
 (2)Record the data from the simulator
 	In fact , I found the dataset  given by Udacity is good enough to train the model. However, it needs to record more data if we want to make our model more robust to finish one loop of the track. Here, I record another special scenarios' image to train the model. 
+
 (3)Read the raw data from the CSV file
 	We can read the data from the csv file, including the steering data and the path of the image we  need to use. This process can be seen from my code of clone.py
+
 (4)Flipped the raw image
 	This is a great strantegy. By this way , more dataset will be generated and the model can learn how to drive in another direction. For example, the raw data are as follows:
 
@@ -53,7 +56,9 @@ The simulator can be downloaded from [simulator](https://github.com/udacity/self
 [image6]: raw3.jpg  "example of the raw image"
 ![alt text][image4 image5 image6]
 
-	Then, I flipped the raw image to augement the dataset, the flipped images are as follows:
+
+Then, I flipped the raw image to augement the dataset, the flipped images are as follows:
+
 
 [//]: # (Image References)
 [image7]: raw1_flipped.jpg "example of the flipped image"
